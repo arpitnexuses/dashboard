@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import {useAuth0} from '@auth0/auth0-react';
+import Topbar from './design/Topbar';
+import Sidebar from './design/Sidebar';
+import Home from './pages/Home';
+import Table from './pages/Table';
+import Upload from './pages/Upload';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+    <Topbar/>
+    <div className="container">
+    <Sidebar/>
+    <Router>
+      <Routes>
+          <Route path="/" element={<Home/>} ></Route>
+          <Route path="/table" element={<Table/>} ></Route>
+          <Route path="/upload" element={<Upload/>} ></Route>        
+          </Routes>
+    </Router>
     </div>
+  
+    </div>
+    </>
   );
 }
 
