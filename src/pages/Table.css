@@ -1,4 +1,10 @@
 
-.table{
-    flex: 4;
+.Data{
+    flex: 5;
+}
+.Data{
+    width: 900px !important;
+}
+.search-field{
+    font-size: medium;
 }

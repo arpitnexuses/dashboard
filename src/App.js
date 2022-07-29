@@ -5,11 +5,13 @@ import Sidebar from './design/Sidebar';
 import Home from './pages/Home';
 import Table from './pages/Table';
 import Upload from './pages/Upload';
+import Fusion from '../src/SaaS/Fusion'
 import {
   BrowserRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
+import Apps from './SaaS/Apps';
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
           <Route path="/" element={<Home/>} ></Route>
           <Route path="/table" element={<Table/>} ></Route>
           <Route path="/upload" element={<Upload/>} ></Route>        
+          <Route path="/dashboard" element={<Apps/>} ></Route>
           </Routes>
     </Router>
     </div>

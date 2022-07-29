@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../LoginAuth/server"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dashboard"
+	}
+}

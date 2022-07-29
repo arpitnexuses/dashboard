@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+
 import "./Sidebar.css"
-import { Home, TableChart, Publish } from "@material-ui/icons"
+import { Home, TableChart, Publish,Dashboard } from "@material-ui/icons"
 
 export default function Sidebar(){
     return (
@@ -12,25 +12,32 @@ export default function Sidebar(){
                 <h3 className="sidebar-Title">Dashboard</h3>
                     <ul className="sidebarList">
                         
-                        {/* <Link to="/" > */}
+                    <a href="/"> 
                     <li className="sidebarListItem ">
                             <Home className="sidebarIcon"/>
                             Home
                         </li>
-                        {/* </Link>
-                        <Link to="/table" > */}
+                        </a>
+                        <a href="/table">  
                         <li className="sidebarListItem">
                             <TableChart className="sidebarIcon"/>
                             Table
                         </li>
-                        {/* </Link>
-                        <Link to="/upload" > */}
+                        </a>
+                        <a href="/upload"> 
 
                         <li className="sidebarListItem">
                         <Publish className="sidebarIcon"/>
                             Upload
                         </li>
-                        {/* </Link> */}
+                        </a>
+                        <a href="/dashboard">
+                        <li className="sidebarListItem">
+                        <Dashboard className="sidebarIcon"/>
+                            Dashboard
+                        </li>
+                        </a>
+
                     </ul>
                     </div>
                     

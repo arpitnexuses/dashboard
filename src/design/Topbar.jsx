@@ -3,7 +3,9 @@ import "./Topbar.css"
 
 import Login from '../components/Login';
 import Logout from '../components/Logout';
+// import { useAuth0 } from '@auth0/auth0-react';
 function Topbar (){
+    // const {isAuthenticated} = useAuth0()
     return (
         <div className="topbar">
             <div className="topbarWrapper">
@@ -12,12 +14,16 @@ function Topbar (){
             </div>
             <div className="topright">
                 <div className="topbarLoginCont">
-                    <div className="login">
+                    {/* {isAuthenticated ? */}
+                     <div className="login">
                         <Login/>
                         </div>
+                       
+                    
                     <div className="logout">
                         <Logout/>
                     </div>
+{/* } */}
                 </div>
             </div>
             </div>

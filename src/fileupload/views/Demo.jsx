@@ -1,4 +1,5 @@
 import React from "react"; 
+import "./Demo.css"
 
 
 const Demo = () => {
@@ -11,10 +12,10 @@ const Demo = () => {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <div className="App">
   <div>
-  <h2>Node js upload CSV file to Mongodb database</h2>
-  <form action="/upload" method="post" encType="multipart/form-data" >
-    <input type="file" name="csvFile" />
-    <input type="submit" defaultValue="Upload" />
+  <h1 className="head">Node js upload CSV file to Mongodb database</h1>
+  <form className="form-csvs" action="/upload" method="post" encType="multipart/form-data" >
+    <input className="form-csv" type="file" name="csvFile" />
+    <input className="form-csv" type="submit" defaultValue="Upload" />
   </form>
   </div>
   </div>

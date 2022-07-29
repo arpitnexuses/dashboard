@@ -20,7 +20,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
   domain={domain}
   clientId={clientId} 
   clientSecret= {clientSecret}
-  redirectUri={window.location.origin}>
+  redirectUri={window.location.origin}
+>
     <App />
     </Auth0Provider>
   </React.StrictMode>
